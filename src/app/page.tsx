@@ -7,20 +7,19 @@ import {
   FaMagic,
   FaCrown,
 } from "react-icons/fa";
+import Slider from "../components/elements/Slider";
+import HeroSection from "../components/elements/HeroSection";
+import { Alert } from "flowbite-react";
+
+function Demo() {
+  return <Alert color="info">Alert!</Alert>;
+}
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-100 to-white text-gray-800">
-      <section className="max-w-4xl mx-auto mt-12 p-8 bg-white rounded-lg shadow-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-blue-800">
-          Welcome to Aanannya Dental Care
-        </h2>
-        <p className="text-lg leading-relaxed">
-          We provide high-quality dental care in a comfortable and friendly
-          environment. Our team of experienced dentists is committed to ensuring
-          your oral health and giving you a beautiful smile.
-        </p>
-      </section>
+      <Slider />
+      <Demo />
 
       <section className="max-w-4xl mx-auto mt-12 p-8 bg-white rounded-lg shadow-lg">
         <h2 className="text-3xl font-semibold mb-6 text-blue-800">
